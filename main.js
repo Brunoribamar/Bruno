@@ -19,7 +19,7 @@ console.log(soma(3, 4));
 if (x > 10) {
     console.log("Maior");
 } else {
-    console.log("Menor");
+    console.log("Menor ou igual");
 }
 
 // Loop for
@@ -41,7 +41,8 @@ console.log([1, 2, 3].map(num => num * 2));
 // Requisição HTTP com fetch
 fetch('https://api.exemplo.com')
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => console.log(data))
+    .catch(error => console.error("Erro na requisição", error));
 
 // Estruturas condicionais avançadas
 if (x > 10) {
@@ -63,7 +64,7 @@ switch (dia) {
 }
 
 // Loop while
-while (x < 5) {
+while (x < 15) {
     console.log(x);
     x++;
 }
@@ -72,7 +73,7 @@ while (x < 5) {
 do {
     console.log(x);
     x++;
-} while (x < 5);
+} while (x < 20);
 
 // Uso de break e continue
 for (let i = 0; i < 10; i++) {
@@ -86,5 +87,6 @@ for (let i = 0; i < 5; i++) {
 }
 
 // Manipulação de arrays
-const arr = [1, 2, 3];
+const arr = [1, 2, 3, 4, 5];
 console.log(arr[0]);
+console.log(arr.length);
